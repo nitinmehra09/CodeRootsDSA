@@ -70,8 +70,8 @@ Welcome to my **DSA Java Repository**! 🌟 Here, you'll find a **comprehensive 
 
 ## 🤝 **Connect With Me**  
 📧 **Email:** nitinmehra2k4@gmail.com      
-🔗 **LinkedIn:** [Your Profile](https://www.linkedin.com/in/nitinmehra09/)  
-🐦 **Twitter:** [@YourHandle](https://x.com/nitinmehra_09)  
+🔗 **LinkedIn:** [Nitinmehra09](https://www.linkedin.com/in/nitinmehra09/)  
+🐦 **Twitter:** [@nitinmehra_09](https://x.com/nitinmehra_09)  
 
 ---
 
