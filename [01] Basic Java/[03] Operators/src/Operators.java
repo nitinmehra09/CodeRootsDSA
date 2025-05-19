@@ -33,7 +33,7 @@ public class Operators {
         // to check it is object of class or not 
 
         //ternary operator
-        boolean f = a>val1?true:false;
+        boolean f = a>val1;
         System.out.println(f);
     }
 }
