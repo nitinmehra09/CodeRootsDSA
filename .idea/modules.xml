@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/CodeRootsDSA.iml" filepath="$PROJECT_DIR$/.idea/CodeRootsDSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/[01] Basic Java/[04] ControlFlow/DecisionMaking/DecisionMaking.iml" filepath="$PROJECT_DIR$/[01] Basic Java/[04] ControlFlow/DecisionMaking/DecisionMaking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/[01] Basic Java/[04] ControlFlow/Loops/Loops.iml" filepath="$PROJECT_DIR$/[01] Basic Java/[04] ControlFlow/Loops/Loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/[01] Basic Java/[01] Basic Java.iml" filepath="$PROJECT_DIR$/[01] Basic Java/[01] Basic Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/[01] Basic Java/[01] HelloWorld/[01] HelloWorld.iml" filepath="$PROJECT_DIR$/[01] Basic Java/[01] HelloWorld/[01] HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/[01] Basic Java/[02] VariablesAndDataTypes/[02] VariablesAndDataTypes.iml" filepath="$PROJECT_DIR$/[01] Basic Java/[02] VariablesAndDataTypes/[02] VariablesAndDataTypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/[01] Basic Java/[03] Operators/[03] Operators.iml" filepath="$PROJECT_DIR$/[01] Basic Java/[03] Operators/[03] Operators.iml" />
+    </modules>
+  </component>
+</project>
