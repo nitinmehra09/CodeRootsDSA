@@ -22,7 +22,7 @@ public class FindAllOccurence {
             }
         }
         System.out.println("Element are at : ");
-        for (int i = 0;i<arr.length;i++){
+        for (int i = 0;i<j;i++){
             System.out.println(arr[i]);
         }
 
