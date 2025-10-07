@@ -2,16 +2,25 @@ public class Implimentation {
     public static void main(String[] args) {
         int a[] = {1,4,2,5,22,9,3,11,7};
         printArray(a,"Before Sorting :");
-        bubbleSortAlgo(a);
+        brickSortAlgo(a);
         printArray(a,"After Sorting : ");
 
     }
-    public static void bubbleSortAlgo(int a[]) {
+    public static void brickSortAlgo(int a[]) {
         int n = a.length;
-        for(int i=0;i<n-1;i++){
-            for(int j=0;j<n-1-i;j++){
-                if(a[j]>a[j+1]){
-                    swap(a,j,j+1);
+        boolean isSwap=false;
+        while (!isSwap) { 
+            isSwap=true;
+            for(int i=0;i<n-1;i+=2){
+                if(a[i]>a[i+1]){
+                    swap(a,i,i+1);
+                    isSwap=false;
+                }
+            }
+            for(int i=1;i<n-1;i+=2){
+                if(a[i]>a[i+1]){
+                    swap(a,i,i+1);
+                    isSwap=false;
                 }
             }
         }
