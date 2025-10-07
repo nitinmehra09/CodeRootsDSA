@@ -23,6 +23,6 @@ class Solution {
         Solution ob = new Solution();
         int[] nums = {1, 1, 0, 1};
         int result = ob.longestSubarray(nums);
-        System.out.println(result); // Expected output: 3
+        System.out.println(result); 
     }
 }
