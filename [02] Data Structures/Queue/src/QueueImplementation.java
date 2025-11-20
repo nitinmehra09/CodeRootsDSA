@@ -71,11 +71,11 @@ public class QueueImplementation {
         q.enqueue(20);
         q.enqueue(30);
 
-        System.out.println(q.dequeue()); // 10
-        System.out.println(q.peek());    // 20
+        System.out.println(q.dequeue()); 
+        System.out.println(q.peek());    
 
-        q.dequeue(); // 20
-        q.dequeue(); // 30
-        q.dequeue(); // queue empty
+        q.dequeue(); 
+        q.dequeue(); 
+        q.dequeue(); 
     }
 }
