@@ -72,7 +72,7 @@ public class CircularQueue {
                     System.out.print("\t");
                 }
             }
-            for (int i =0;i<=rear;i++){
+            for (int i =0;i<=rear;i++){ 
                 System.out.print(queue[i]);
                 if(i!=rear){
                     System.out.print("\t");

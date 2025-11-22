@@ -115,7 +115,7 @@ public class DoubleEndedQueue {
             for (int i = front; i < capacity; i++) {
                 System.out.print(queue[i] + "\t");
             }
-            for (int i = 0; i <= rear; i++) {
+            for (int i = 0; i <= rear; i++) { 
                 System.out.print(queue[i] + "\t");
             }
         } else {
