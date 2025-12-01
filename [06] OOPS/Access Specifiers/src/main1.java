@@ -1,5 +1,5 @@
 class acs{
-     private int x;
+    private int x;
 
     public void setX(int x) {
         this.x = x;
