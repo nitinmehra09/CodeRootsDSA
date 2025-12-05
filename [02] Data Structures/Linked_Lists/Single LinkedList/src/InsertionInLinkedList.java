@@ -12,11 +12,11 @@ class Node<T>{
     }
 }
 
-public class linkedList {
+public class InsertionInLinkedList {
     Node<Integer> head;
     int size;
 
-    public linkedList() {
+    public InsertionInLinkedList() {
         this.head = null;
         this.size = 0;
     }
@@ -75,7 +75,7 @@ public class linkedList {
         }
     }
     public static void main(String[] args) {
-        linkedList l = new linkedList();
+        InsertionInLinkedList l = new InsertionInLinkedList();
         System.out.println("=== Testing InsertAtHead ===");
         l.InsertAtHead(10);
         l.InsertAtHead(20);
