@@ -21,6 +21,38 @@ public class InsertionInLinkedList {
         this.size = 0;
     }
     
+    public void DeletionFromHead(){
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+        Node<Integer> temp = head;
+        head = head.next;
+        temp.next = null;
+        size--;
+    }
+
+    public void DeletionFromTail(){
+        if (head == null) {
+            System.out.println("List is empty");
+            return;
+        }
+        Node<Integer> temp = head;
+        Node<Integer> prev = temp;
+        //for single node;
+        if(head.next == null){
+            head = null;
+            size--;
+            return;
+        }
+        while(temp.next!=null){
+            prev = temp;
+            temp = temp.next;
+        }
+        prev.next = null;
+        size--;
+    }
+
     public void InsertAtHead(int data){
         Node<Integer> newNode = new Node<>(data);
         if(head == null){
@@ -76,30 +108,56 @@ public class InsertionInLinkedList {
     }
     public static void main(String[] args) {
         InsertionInLinkedList l = new InsertionInLinkedList();
-        System.out.println("=== Testing InsertAtHead ===");
+
+        System.out.println("=== INSERTION OPERATIONS ===");
+
+        // Insert at Head
         l.InsertAtHead(10);
         l.InsertAtHead(20);
         l.InsertAtHead(30);
         l.printList();   // 30 -> 20 -> 10 -> null
 
-        System.out.println("\n=== Testing InsertAtTail ===");
+        // Insert at Tail
         l.InsertAtTail(40);
         l.InsertAtTail(50);
         l.printList();   // 30 -> 20 -> 10 -> 40 -> 50 -> null
 
-        System.out.println("\n=== Testing InsertAtPosition ===");
-        l.InsertAtPosition(1, 999);     // insert at head
-        l.printList();   
+        // Insert at Position
+        l.InsertAtPosition(1, 100);   // head
+        l.printList();
 
-        l.InsertAtPosition(3, 777);     // insert in middle
-        l.printList();   
+        l.InsertAtPosition(4, 200);   // middle
+        l.printList();
 
-        l.InsertAtPosition(l.size + 1, 555);  // insert at tail
-        l.printList();   
+        l.InsertAtPosition(l.size + 1, 300); // tail
+        l.printList();
 
-        System.out.println("\n=== Testing Wrong Input ===");
-        l.InsertAtPosition(0, 111);     // invalid
-        l.InsertAtPosition(100, 222);   // invalid
+        System.out.println("\n=== DELETION OPERATIONS ===");
+
+        // Delete from Head
+        l.DeletionFromHead();
+        l.printList();
+
+        // Delete from Tail
+        l.DeletionFromTail();
+        l.printList();
+
+        // Multiple deletions
+        l.DeletionFromHead();
+        l.DeletionFromTail();
+        l.printList();
+
+        System.out.println("\n=== EDGE CASE TESTING ===");
+
+        // Deleting all nodes
+        while (l.size > 0) {
+            l.DeletionFromHead();
+            l.printList();
+        }
+
+        // Try deleting from empty list
+        l.DeletionFromHead();
+        l.DeletionFromTail();
     }
 
     public void printList() {
