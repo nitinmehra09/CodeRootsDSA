@@ -41,7 +41,7 @@ public class MyHashMap<K,V> {
         }
         return -1;
     }
-    public void rehashing(){
+    private  void rehashing(){
         LinkedList<Node>[] oldList = hashTable;
         tableSize = 2*tableSize;
         elments = 0;
@@ -72,11 +72,10 @@ public class MyHashMap<K,V> {
         int hashcode = gethashcode(key);
         int index = searchIndexOfkey(key,hashcode);
         if(index==-1){
-            System.out.println("already empty ");
+            System.out.println("Key not found");
         }else{
-            // clear the value for the found node
-            V value = null;
-            hashTable[hashcode].get(index).value = value;
+            hashTable[hashcode].remove(index);
+            elments--;
         }
     }
     public boolean contains(K key){
@@ -92,8 +91,8 @@ public class MyHashMap<K,V> {
         }
         return hashTable[hashcode].get(index).value;
     }
-    public int size(K key){
-        return hashTable.length;
+    public int size(){
+        return elments;
     }
 
 
