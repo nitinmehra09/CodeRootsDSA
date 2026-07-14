@@ -68,6 +68,22 @@ public class MyHashMap<K,V> {
             rehashing();
         }
     }
+    public void remove(K key){
+        int hashcode = gethashcode(key);
+        int index = searchIndexOfkey(key,hashcode);
+        if(index==-1){
+            System.out.println("already empty ");
+        }else{
+            // clear the value for the found node
+            V value = null;
+            hashTable[hashcode].get(index).value = value;
+        }
+    }
+    public boolean contains(K key){
+        int hashcode = gethashcode(key);
+        int index = searchIndexOfkey(key,hashcode);
+        return index != -1;
+    }
     public V get(K key){
         int hashcode = gethashcode(key);
         int index = searchIndexOfkey(key,hashcode);
@@ -76,4 +92,9 @@ public class MyHashMap<K,V> {
         }
         return hashTable[hashcode].get(index).value;
     }
+    public int size(K key){
+        return hashTable.length;
+    }
+
+
 }
