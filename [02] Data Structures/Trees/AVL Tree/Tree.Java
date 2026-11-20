@@ -63,15 +63,19 @@ public class Tree{
         p.right = temp;
     }
     void lrRotation(Node p, Node c, Node g){
-        Node temp = g.right;
+        Node temp1 = g.right;
+        Node temp2 = g.left;
         g.right = p;
         g.left = c;
-        p.left = temp;
+        p.left = temp1;
+        c.right = temp2;
     }
     void rlRotation(Node p, Node c, Node g){
-        Node temp = g.left;
+        Node temp1 = g.left;
+        Node temp2 = g.right;
         g.left = p;
         g.right = c;
-        p.right = temp;
+        p.right = temp1;
+        c.left = temp2;
     }
 }
